@@ -1,0 +1,9 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: pri-configuration
+  output:
+    ansi:
+      enabled: always #console log 컬러 입히긴
