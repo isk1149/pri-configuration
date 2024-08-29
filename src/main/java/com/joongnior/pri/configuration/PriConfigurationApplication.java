@@ -1,4 +1,4 @@
-package com.joongnior.pri_configuration;
+package com.joongnior.pri.configuration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

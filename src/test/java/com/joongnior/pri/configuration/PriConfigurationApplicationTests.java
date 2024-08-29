@@ -1,4 +1,4 @@
-package com.joongnior.pri_configuration;
+package com.joongnior.pri.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
