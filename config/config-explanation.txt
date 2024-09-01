@@ -1,0 +1,9 @@
+spring cloud config client에서 설정 파일을 참고할 때
+1.application-name-profile.yml -> 2.application-name.yml -> 3.application.yml 순으로 참고한다.
+ex) pri-board-service-dev.yml -> pri-board-service.yml -> application.yml 순으로 참고
+개발, 운영 서버는 애플리케이션 실행 명령어에 profile 설정이 들어가므로 application-name-profile.yml 설정을 가져올 거고
+로컬의 경우 별도 profile 설정이 없으므로 application-name.yml 설정을 가져온다.
+
+http://localhost:8888/pri-board-service/default
+http://localhost:8888/pri-board-service/dev
+이런식으로 호출해보면 어떤 설정 값을 가져오는지 알 수 있다
