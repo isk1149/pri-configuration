@@ -7,3 +7,16 @@ spring:
   output:
     ansi:
       enabled: always #console log 컬러 입히긴
+  profiles:
+    active: native #Spring Cloud Config Server가 native 프로파일을 사용하라고 설정. 디폴트는 git 프로파일을 사용하려고 시도함
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:./config/pri-board-service, file:./config/pri-user-service #Config Server가 설정 파일을 찾을 수 있는 위치를 지정
+        #git 사용 시 아래 설정 필요
+        #git:
+          #uri: https://github.com/isk1149/spring-cloud-config.git #.git안써도 무방
+          #username: private repository면 추가 기입
+          #password: private repository면 추가 기입
+          #default-label: master #initial label could be main branch
