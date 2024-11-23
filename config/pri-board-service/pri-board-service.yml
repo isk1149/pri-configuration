@@ -1,8 +1,8 @@
 #Config Server는 pri-board-service라는 애플리케이션이 Config Server에 설정을 요청할 때
-#pri-board-service.yml 파일에서 설정을 읽어 제공
+#pri-board-service-<profile>.yml->pri-board-service.yml -> application.yml 파일 순으로 설정을 읽어 제공
 spring:
   datasource:
-    url: jdbc:mariadb://localhost:3306/priboard
+    url: jdbc:mariadb://localhost:3306/db_pri_board_dev
     username: root
     password: mariadb
     driver-class-name: org.mariadb.jdbc.Driver
